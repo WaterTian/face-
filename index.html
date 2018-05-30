@@ -1,7 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
 <head>
-    <meta name="viewport" id="viewport"  content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <title>Face</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<script src="js/zepto.min.js"></script>
@@ -9,8 +11,11 @@
 </head>
 <body>
     <br>
-    <input type="file" id="upload" accept="image/*">
-    <br>
+
+    <div id="uploadDiv" style="height: 50px; line-height: 50px;text-align: center;border-bottom: 1px solid #171E28;">  
+            上传图片:  
+            <input type="file" accept="image/*" id="uploadImage" capture="camera"/>  
+    </div>    
 
     <h2>log:</h2>
     <p id="log">&nbsp;</p>
